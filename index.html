@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Properties Demo</title>
+    <style>
+      /* <!-- Padding & Margin: Demonstrates how to control space inside and outside elements.
+Width, Height, and Max-width: Sets dimensions and constraints on element size.
+Font Properties: Shows how to style text within elements.
+Text Alignment, Line Height, and Letter Spacing: Affects text layout and spacing.
+Background, Border, Border Radius, and Box Shadow: Styles the element’s background and borders.
+Cursor and Display: Changes the mouse pointer and element layout.
+Opacity and Overflow: Controls transparency and content overflow.
+Flexbox: Aligns and distributes space among items in a container.
+Positioning: Demonstrates how to position elements absolutely within a relatively positioned container--> */
+      /* Padding */
+      .div1 {
+        padding: 20px;
+        background-color: lightblue; /* Added for visibility */
+      }
+
+      .div2 {
+        padding: 50px 30px 100px 50px;
+        background-color: lightyellow; /* Added for visibility */
+      }
+
+      /* Margin */
+      .element {
+        margin: 10px;
+        background-color: lightgray; /* Added for visibility */
+      }
+
+      /* Width and Height */
+      .box {
+        width: 200px;
+        height: 150px;
+        background-color: coral; /* Added for visibility */
+      }
+
+      /* Max-width */
+      .container {
+        max-width: 100%;
+        background-color: lightgreen; /* Added for visibility */
+      }
+
+      /* Font Properties */
+      .text {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        font-style: italic;
+        color: darkblue; /* Added to demonstrate color property */
+      }
+
+      /* Text Alignment */
+      .header {
+        text-align: center;
+        font-size: 24px; /* Adjusted for better visibility */
+      }
+
+      /* Line Height */
+      .paragraph {
+        line-height: 1.5;
+        font-size: 18px; /* Adjusted for better visibility */
+      }
+
+      /* Letter Spacing */
+      .title {
+        letter-spacing: 2px;
+        font-size: 20px; /* Adjusted for better visibility */
+      }
+
+      /* Background Color */
+      .background {
+        background-color: yellow;
+        padding: 10px; /* Added for spacing */
+      }
+
+      /* Border */
+      .border-box {
+        border: 2px solid black;
+        padding: 10px; /* Added for spacing */
+      }
+
+      /* Border Radius */
+      .rounded {
+        border-radius: 10px;
+        background-color: pink; /* Added for visibility */
+        padding: 20px; /* Added for spacing */
+      }
+
+      /* Box Shadow */
+      .shadow {
+        box-shadow: 5px 5px 10px gray;
+        padding: 20px; /* Added for spacing */
+        background-color: lightcoral; /* Added for visibility */
+      }
+
+      /* Cursor */
+      .pointer {
+        cursor: pointer;
+        background-color: lightblue; /* Added for visibility */
+        padding: 10px; /* Added for spacing */
+      }
+
+      /* Display */
+      .block-element {
+        display: block;
+        background-color: lightgreen; /* Added for visibility */
+        padding: 10px; /* Added for spacing */
+      }
+
+      /* Opacity */
+      .transparent {
+        opacity: 0.5;
+        background-color: purple; /* Added for visibility */
+        padding: 20px; /* Added for spacing */
+        color: white; /* Added for contrast */
+      }
+
+      /* Overflow */
+      .overflow-container {
+        width: 150px;
+        height: 100px;
+        overflow: hidden;
+        background-color: lightgray; /* Added for visibility */
+        border: 1px solid black;
+      }
+
+      /* Additional Properties */
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: lightyellow; /* Added for visibility */
+        padding: 10px;
+      }
+
+      .flex-item {
+        background-color: darkcyan;
+        padding: 20px;
+        color: white;
+        margin: 5px;
+        flex: 1; /* Flexbox property to evenly distribute items */
+        text-align: center;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+        background-color: orange;
+      }
+
+      .relative-container {
+        position: relative;
+        height: 300px;
+        background-color: lightblue; /* Added for visibility */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">CSS Properties Demo</h1>
+
+    <div class="div1">This is a div with padding: 20px on all sides.</div>
+
+    <div class="div2">
+      This is a div with different padding values on each side.
+    </div>
+
+    <div class="element box">This box has a fixed width and height.</div>
+
+    <div class="container">
+      <p class="text">This text demonstrates various font properties.</p>
+      <p class="paragraph">
+        This paragraph demonstrates line height and font size.
+      </p>
+      <h2 class="title">Letter Spacing Example</h2>
+    </div>
+
+    <div class="background">This div has a yellow background color.</div>
+
+    <div class="border-box">This div has a black border.</div>
+
+    <div class="rounded">This div has rounded corners.</div>
+
+    <div class="shadow">This div has a shadow.</div>
+
+    <div class="pointer">Hover over this div to see the cursor change.</div>
+
+    <div class="block-element">This is a block element.</div>
+
+    <div class="transparent">This div is 50% transparent.</div>
+
+    <div class="overflow-container">
+      This content is overflowing and is hidden due to the overflow property. It
+      will not be visible outside the container's bounds.
+    </div>
+
+    <!-- Flexbox Container -->
+    <div class="flex-container">
+      <div class="flex-item">Flex Item 1</div>
+      <div class="flex-item">Flex Item 2</div>
+      <div class="flex-item">Flex Item 3</div>
+      <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <!-- Positioning Example -->
+    <div class="relative-container">
+      <div class="absolute-box">Absolutely positioned box</div>
+    </div>
+  </body>
+</html>
